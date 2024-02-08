@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+To implement the registration and login functionality before navigating to the data page, you'll need to integrate user authentication logic into your React application. Here's a general outline of the steps you can follow:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Registration Page: Create a registration form where users can enter their details such as name, email, and password. When the user submits the form, you should validate the input fields and then store the user's information, possibly in the local storage or a database.
 
-## Available Scripts
+Login Page: Create a login form where users can enter their email and password. On submission, validate the entered credentials against the stored user data (from local storage or database). If the credentials are valid, allow the user to proceed to the data page.
 
-In the project directory, you can run:
+Data Page: Display the data as you've implemented in your Fetching component. However, before rendering this page, ensure that the user is authenticated. If the user is not authenticated, redirect them to the login page.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+in the data page i provide basic crud operations like add,delete,search and logout.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+if i choose add option it will display one form like title and status.if i click add item the data will added at end.
 
-### `npm test`
+if i choose delete based id it was deleted.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+if i choose edit option it will edit the id and title in the way of alert box.
 
-### `npm run build`
+if choose search option it will search based on title names it was giving result.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+if i choose logout it was redirected to login page based on routing.
